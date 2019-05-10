@@ -1,1 +1,2 @@
 sudo apt install realmd krb5-user software-properties-common packagekit
+sudo realm join youdomain.com -U 'administrator@YOURDOMAIN.COM' -v
