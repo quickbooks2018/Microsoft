@@ -1,0 +1,1 @@
+sudo apt install realmd krb5-user software-properties-common packagekit
