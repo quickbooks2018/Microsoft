@@ -1,0 +1,11 @@
+# https://unix.stackexchange.com/questions/436723/shared-folder-does-not-appear-in-guest-centos-windows-host-using-vmware
+
+# First of all you need to create a folder where the mount should be pointed to.
+
+sudo mkdir /your_shared_folder
+Then you should see your vmware shared folder using this command:
+
+sudo vmware-hgfsclient
+If you do see your shared folder then runnign this should mount your vmware shared folder to the folder you previously created:
+
+sudo vmhgfs-fuse /your_shared_folder
