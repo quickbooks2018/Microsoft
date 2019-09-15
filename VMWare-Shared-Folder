@@ -9,3 +9,34 @@ sudo vmware-hgfsclient
 If you do see your shared folder then runnign this should mount your vmware shared folder to the folder you previously created:
 
 sudo vmhgfs-fuse /your_shared_folder
+
+#################################################################################################
+
+# http://www.doublecloud.org/2017/07/install-vmware-tools-on-centos-7-the-easy-and-quick-way/
+
+Here is one line to get your Open VMware Tools installed on CentOS 7.
+
+# yum install -y open-vm-tools
+Once it’s installed, you should able to see the file:
+
+# ls /usr/bin/vmtoolsd
+After this is done, you won’t see it running from the vSphere Web Client. To get it running, you can simply reboot the virtual machine
+
+# reboot
+
+
+vmware-hgfsclient
+
+# First of all you need to create a folder where the mount should be pointed to.
+
+sudo mkdir /your_shared_folder
+Then you should see your vmware shared folder using this command:
+
+sudo vmware-hgfsclient
+If you do see your shared folder then runnign this should mount your vmware shared folder to the folder you previously created:
+
+sudo vmhgfs-fuse /your_shared_folder
+
+
+
+
