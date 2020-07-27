@@ -1,0 +1,17 @@
+https://superuser.com/questions/117902/find-out-which-process-is-locking-a-file-or-folder-in-windows#:~:text=Go%20to%20Find%2C%20Find%20Handle,process%20in%20the%20main%20window.
+
+
+881
+
++50
+You can use the Resource Monitor for this which comes built-in with Windows 7, 8, and 10.
+
+Open Resource Monitor, which can be found
+By searching for Resource Monitor or---------> resmon.exe <----------- in the start menu, or
+As a button on the Performance tab in your Task Manager
+Go to the CPU tab
+Use the search field in the Associated Handles section
+
+
+
+---------> resmon.exe <-----------
